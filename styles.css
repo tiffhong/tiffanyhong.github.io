@@ -1,0 +1,60 @@
+/* Overall page style */
+body {
+  font-family: Georgia, serif;
+  background-color: #f7f1eb;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header section */
+.header {
+  background-color: #d8c3b5;
+  text-align: center;
+  padding: 30px;
+}
+
+/* Navigation bar */
+.nav {
+  background-color: #8e7d6b;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Navigation links */
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+/* Sections */
+.section {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Headings */
+h1 {
+  color: #5c4033;
+}
+
+h2 {
+  color: #5c4033;
+}
+
+/* Image styling */
+img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+/* Video styling */
+iframe {
+  display: block;
+  margin: 20px auto;
+}

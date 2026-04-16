@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web App | Tiffany Hong</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f5f1;
+      text-align: center;
+      padding: 40px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #5c4033;
+    }
+
+    button {
+      background-color: #8e7d6b;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #6f5d4d;
+    }
+
+    #result {
+      margin-top: 25px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #5c4033;
+    }
+
+    .nav {
+      margin-bottom: 30px;
+    }
+
+    .nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #5c4033;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="resume.html">Résumé</a>
+    <a href="scratch.html">Scratch Page</a>
+  </div>
+
+  <div class="container">
+    <h1>Outfit Idea Generator</h1>
+    <p>Click the button for a random outfit idea.</p>
+    <button onclick="generateOutfit()">Generate Outfit</button>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    function generateOutfit() {
+      const outfits = [
+        "Blue jeans, a white baby tee, and sneakers",
+        "A midi dress with sandals and simple jewelry",
+        "Black trousers, a fitted top, and loafers",
+        "A denim skirt, tank top, and white shoes",
+        "Sweater, leggings, and comfy sneakers",
+        "Blazer, straight-leg jeans, and boots",
+        "Matching lounge set with gold accessories"
+      ];
+
+      const randomIndex = Math.floor(Math.random() * outfits.length);
+      document.getElementById("result").textContent = outfits[randomIndex];
+    }
+  </script>
+</body>
+</html>
